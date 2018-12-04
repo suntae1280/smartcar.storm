@@ -38,7 +38,7 @@ public class SmartCarDrivingTopology {
 		TopologyBuilder topologyBuilder = new TopologyBuilder();
 		
 		// Spout(Kafka) 생성 및 등록
-		BrokerHosts brokerHosts = new ZkHosts( "lx01.hadoop.com:2181" );
+		BrokerHosts brokerHosts = new ZkHosts( "lx02.hadoop.com:2181" );
 		String topicName = "SmartCar-Topic";
 		String zookeeperPathName = "/SmartCar-Topic";
 
