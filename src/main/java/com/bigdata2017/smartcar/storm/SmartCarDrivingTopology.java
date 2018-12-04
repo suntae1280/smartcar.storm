@@ -28,7 +28,7 @@ public class SmartCarDrivingTopology {
 		config.put( Config.NIMBUS_HOST, "lx01.hadoop.com" );
 		config.put( Config.NIMBUS_THRIFT_PORT, 6627 );
 		config.put( Config.STORM_ZOOKEEPER_PORT, 2181 );
-		config.put( Config.STORM_ZOOKEEPER_SERVERS, Arrays.asList( "lx01.hadoop.com" ) );	
+		config.put( Config.STORM_ZOOKEEPER_SERVERS, Arrays.asList( "lx02.hadoop.com" ) );	
 
 		// 토폴로지 등록
 		StormSubmitter.submitTopology( args[0], config, makeTopology() );
